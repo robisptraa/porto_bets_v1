@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dskdfmkd</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.3/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header>
+    <div class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Logo">
+        <span>tc<span class="tech">.xs</span></span>
+      </div>
+
+      <!-- Menu -->
+      <nav>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+        </ul>
+      </nav>
+
+      <!-- Tombol -->
+      <a href="#" class="contact-btn">
+        <span>📞 Contact Us</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+   <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Halo, dfdfa <span class="highlight">[Ndfd]</span></h2>
+      <p>
+        Saya sedsfsfweb yang berfokus pada menciptakan tampilan modern, 
+        responsif, dan interaktif.
+      </p>
+      <a href="#projects" class="btn">Lihat Proyek</a>
+    </div>
+    <div class="hero-image">
+      <img src="hero-image.png" alt="Website Illustration">
+    </div>
+  </section>
+
+    <!-- Client Section -->
+<section class="client-section">
+    <h2 class="client-title">Our Client</h2>
+    <div class="client-carousel">
+      <div class="client-card">
+        <img src="ciptravels.png" alt="Ciptravels Logo">
+        <h3>Ciptravels</h3>
+        <p>Begins, Infinite Solutions.</p>
+      </div>
+      <div class="client-card">
+        <img src="hitungdong.png" alt="Hitungdong Logo">
+        <h3>Hitungdong</h3>
+        <p>Finance Made Simple.</p>
+      </div>
+      <div class="client-card">
+        <img src="luisembroidery.png" alt="Luisembroidery Logo">
+        <h3>Luisembroidery</h3>
+        <p>Creative Stitching Since 2022.</p>
+      </div>
+    </div>
+
+    <div class="carousel-buttons">
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+  </section>
+
+
+  <!-- About Section -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <img src="https://via.placeholder.com/400" alt="Profile" class="about-img">
+      <div class="about-content">
+        <h3>Tentang Saya</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <div class="btn-wrapper">
+          <a href="#contact" class="btn">Hubungi Saya</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Projects Section -->
+  <section id="expertise">
+  <div class="container">
+    <h2 class="section-title">Our Expertise</h2>
+    <div class="expertise-grid">
+
+      <div class="card">
+        <div class="icon-box" style="background:#8bd4ff;">
+          <span>🎨</span>
+        </div>
+        <div class="card-content">
+          <h3>UI/UX Design</h3>
+          <p>Figma, Adobe XD, Sketch, Balsamiq</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon-box" style="background:#ffde6b;">
+          <span>💻</span>
+        </div>
+        <div class="card-content">
+          <h3>Programming Language</h3>
+          <p>JavaScript, TypeScript, PHP, Dart</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon-box" style="background:#ffa76b;">
+          <span>🌐</span>
+        </div>
+        <div class="card-content">
+          <h3>Web Development</h3>
+          <p>HTML5, CSS3, React, Node.js</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon-box" style="background:#9cb6ff;">
+          <span>📱</span>
+        </div>
+        <div class="card-content">
+          <h3>Mobile Development</h3>
+          <p>Flutter, Kotlin, Swift, Android</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <h2 class="section-title">Testimonials</h2>
+  <div class="carousel-container">
+    <button class="nav prev" onclick="moveSlide(-1)">&#10094;</button>
+
+    <div class="testimonial-carousel">
+      <div class="testimonial-card">
+        <p>"Collaborating with Ngubar has been a game-changer. Their team is fast, responsive, and understands our business goals perfectly."</p>
+        <div class="author">
+          <div class="avatar" style="background:#8bd4ff;">DA</div>
+          <div>
+            <h4>Daniel Stone</h4>
+            <span>CEO</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <p>"Ngubar delivered our app ahead of schedule without sacrificing quality. Their backend architecture is rock solid."</p>
+        <div class="author">
+          <div class="avatar" style="background:#b26bff;">LI</div>
+          <div>
+            <h4>Lisa</h4>
+            <span>CTO</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <p>"We loved how Ngubar combined creative UI design with flawless functionality. Super happy with the final product."</p>
+        <div class="author">
+          <div class="avatar" style="background:#d94b6b;">AH</div>
+          <div>
+            <h4>Ahmed Khan</h4>
+            <span>Founder</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="nav next" onclick="moveSlide(1)">&#10095;</button>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+ <section id="contact">
+  <div class="contact-container">
+    <h2>Hubungi Saya</h2>
+    <p>Silakan kirim pesan melalui email atau langsung lewat WhatsApp.</p>
+
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Nama Lengkap" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <textarea id="message" rows="5" placeholder="Tulis pesan kamu di sini..." required></textarea>
+      <div class="button-group">
+        <button type="submit" class="btn-email">Kirim via Email</button>
+        <button type="button" class="btn-wa" onclick="sendToWhatsApp()">Kirim via WhatsApp</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+ <footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Kolom 1: Logo dan Sosial Media -->
+    <div class="footer-col">
+      <div class="footer-logo">
+        <img src="logo.png" alt="Logo">
+        <h3>ngubar<span>.tech</span></h3>
+      </div>
+      <p>Follow Our Social Media:</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p class="hashtag">#NgulikBarengYuk!</p>
+    </div>
+
+    <!-- Kolom 2: Kontak -->
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>Email: <a href="mailto:ngubartechid@gmail.com">ngubartechid@gmail.com</a></p>
+      <p>Telephone: <a href="tel:+6285864930084">(+62) 858-6493-0084</a></p>
+    </div>
+
+    <!-- Kolom 3: Link -->
+    <div class="footer-col">
+      <h4>Usable Link</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#client">Our Client</a></li>
+        <li><a href="#company">Our Company</a></li>
+        <li><a href="#service">Our Service</a></li>
+        <li><a href="#vision">Our Vision Mission</a></li>
+        <li><a href="#expertise">Our Expertise</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Garis bawah -->
+  <div class="footer-bottom">
+    © Ngubar Tech 2025. All rights reserved
+  </div>
+</footer>
+
+<!-- Font Awesome (ikon sosial media) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <script src="script.js"></script>
+</body>
+</html>
