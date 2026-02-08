@@ -1,271 +1,332 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>dskdfmkd</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.3/dist/tailwind.min.css" rel="stylesheet">
+  <meta name="description"
+    content="Portfolio of a Creative Web Developer specializing in modern, responsive, and interactive websites.">
+  <title>Creative Portfolio | Web Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 text-gray-800">
 
-  <!-- Navbar -->
-  <header>
-    <div class="navbar">
-      <!-- Logo -->
+<body>
+
+  <!-- Navigation -->
+  <header id="header">
+    <nav class="navbar container">
       <div class="logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Logo">
-        <span>tc<span class="tech">.xs</span></span>
+        <a href="#home">
+          <i class="fa-solid fa-code"></i>
+          <span>Dev<span class="highlight">Folio</span></span>
+        </a>
       </div>
 
-      <!-- Menu -->
-      <nav>
-        <ul>
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-        </ul>
-      </nav>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-      <!-- Tombol -->
-      <a href="#" class="contact-btn">
-        <span>📞 Contact Us</span>
-      </a>
-    </div>
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
   </header>
 
-  <!-- Hero Section -->
-   <section id="home" class="hero">
-    <div class="hero-content">
-      <h2>Halo, dfdfa <span class="highlight">[Ndfd]</span></h2>
-      <p>
-        Saya sedsfsfweb yang berfokus pada menciptakan tampilan modern, 
-        responsif, dan interaktif.
-      </p>
-      <a href="#projects" class="btn">Lihat Proyek</a>
-    </div>
-    <div class="hero-image">
-      <img src="hero-image.png" alt="Website Illustration">
-    </div>
-  </section>
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="subtitle">Welcome to my world</span>
+          <h1>Hi, I'm <span class="highlight">Alex</span><br>Creative Developer.</h1>
+          <p>
+            I build modern, responsive, and user-friendly websites.
+            Let's turn your ideas into digital reality.
+          </p>
+          <div class="hero-btns">
+            <a href="#portfolio" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
 
-    <!-- Client Section -->
-<section class="client-section">
-    <h2 class="client-title">Our Client</h2>
-    <div class="client-carousel">
-      <div class="client-card">
-        <img src="ciptravels.png" alt="Ciptravels Logo">
-        <h3>Ciptravels</h3>
-        <p>Begins, Infinite Solutions.</p>
-      </div>
-      <div class="client-card">
-        <img src="hitungdong.png" alt="Hitungdong Logo">
-        <h3>Hitungdong</h3>
-        <p>Finance Made Simple.</p>
-      </div>
-      <div class="client-card">
-        <img src="luisembroidery.png" alt="Luisembroidery Logo">
-        <h3>Luisembroidery</h3>
-        <p>Creative Stitching Since 2022.</p>
-      </div>
-    </div>
+          <div class="socials">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
 
-    <div class="carousel-buttons">
-      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-      <button class="next" onclick="moveSlide(1)">&#10095;</button>
-    </div>
-  </section>
-
-
-  <!-- About Section -->
-<section id="about">
-  <div class="container">
-    <div class="about-grid">
-      <img src="https://via.placeholder.com/400" alt="Profile" class="about-img">
-      <div class="about-content">
-        <h3>Tentang Saya</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <div class="btn-wrapper">
-          <a href="#contact" class="btn">Hubungi Saya</a>
+        <div class="hero-image">
+          <!-- Placeholder for hero image that matches the theme better -->
+          <div class="hero-blob"></div>
+          <img src="https://via.placeholder.com/500x600/0f172a/38bdf8?text=Hero+Image" alt="Abstract Hero Illustration">
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-  <!-- Projects Section -->
-  <section id="expertise">
-  <div class="container">
-    <h2 class="section-title">Our Expertise</h2>
-    <div class="expertise-grid">
-
-      <div class="card">
-        <div class="icon-box" style="background:#8bd4ff;">
-          <span>🎨</span>
-        </div>
-        <div class="card-content">
-          <h3>UI/UX Design</h3>
-          <p>Figma, Adobe XD, Sketch, Balsamiq</p>
+    <!-- Tech Stack / Clients Marquee -->
+    <section class="clients">
+      <div class="container">
+        <p class="section-subtitle">Trusted by innovative companies</p>
+        <div class="client-logos">
+          <!-- Using FontAwesome icons as placeholders for client logos -->
+          <i class="fab fa-react" title="React"></i>
+          <i class="fab fa-js" title="JavaScript"></i>
+          <i class="fab fa-html5" title="HTML5"></i>
+          <i class="fab fa-css3-alt" title="CSS3"></i>
+          <i class="fab fa-node-js" title="Node.js"></i>
+          <i class="fab fa-figma" title="Figma"></i>
         </div>
       </div>
+    </section>
 
-      <div class="card">
-        <div class="icon-box" style="background:#ffde6b;">
-          <span>💻</span>
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container about-container">
+        <div class="about-img">
+          <img src="https://via.placeholder.com/450x550/1e293b/cbd5e1?text=Profile+Photo" alt="Profile Picture">
         </div>
-        <div class="card-content">
-          <h3>Programming Language</h3>
-          <p>JavaScript, TypeScript, PHP, Dart</p>
+        <div class="about-content">
+          <h2 class="section-title">About Me</h2>
+          <h3>I create products with purpose.</h3>
+          <p>
+            With over 5 years of experience in web development, I specialize in building efficient,
+            robust, and scalable applications. My passion lies in solving complex problems through clean code and
+            intuitive design.
+          </p>
+
+          <div class="stats">
+            <div class="stat-item">
+              <h4>05+</h4>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat-item">
+              <h4>50+</h4>
+              <p>Projects Completed</p>
+            </div>
+            <div class="stat-item">
+              <h4>20+</h4>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-primary">Download CV <i class="fa-solid fa-download"></i></a>
         </div>
       </div>
+    </section>
 
-      <div class="card">
-        <div class="icon-box" style="background:#ffa76b;">
-          <span>🌐</span>
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">My Services</h2>
+          <p>What I can do for you</p>
         </div>
-        <div class="card-content">
-          <h3>Web Development</h3>
-          <p>HTML5, CSS3, React, Node.js</p>
-        </div>
-      </div>
 
-      <div class="card">
-        <div class="icon-box" style="background:#9cb6ff;">
-          <span>📱</span>
-        </div>
-        <div class="card-content">
-          <h3>Mobile Development</h3>
-          <p>Flutter, Kotlin, Swift, Android</p>
-        </div>
-      </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="icon-box">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>Building fast, responsive, and secure websites using modern technologies like React and Node.js.</p>
+          </div>
 
-    </div>
-  </div>
-</section>
+          <div class="service-card">
+            <div class="icon-box">
+              <i class="fa-solid fa-paint-brush"></i>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>Creating intuitive and aesthetically pleasing user interfaces that provide great user experiences.</p>
+          </div>
 
-<section id="testimonials">
-  <h2 class="section-title">Testimonials</h2>
-  <div class="carousel-container">
-    <button class="nav prev" onclick="moveSlide(-1)">&#10094;</button>
+          <div class="service-card">
+            <div class="icon-box">
+              <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+            <h3>Mobile Apps</h3>
+            <p>Developing cross-platform mobile applications that work seamlessly on both iOS and Android.</p>
+          </div>
 
-    <div class="testimonial-carousel">
-      <div class="testimonial-card">
-        <p>"Collaborating with Ngubar has been a game-changer. Their team is fast, responsive, and understands our business goals perfectly."</p>
-        <div class="author">
-          <div class="avatar" style="background:#8bd4ff;">DA</div>
-          <div>
-            <h4>Daniel Stone</h4>
-            <span>CEO</span>
+          <div class="service-card">
+            <div class="icon-box">
+              <i class="fa-solid fa-magnifying-glass-chart"></i>
+            </div>
+            <h3>SEO Optimization</h3>
+            <p>Optimizing websites to rank higher on search engines and attract more organic traffic.</p>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="testimonial-card">
-        <p>"Ngubar delivered our app ahead of schedule without sacrificing quality. Their backend architecture is rock solid."</p>
-        <div class="author">
-          <div class="avatar" style="background:#b26bff;">LI</div>
-          <div>
-            <h4>Lisa</h4>
-            <span>CTO</span>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Latest Projects</h2>
+          <p>Some of my recent work</p>
+        </div>
+
+        <div class="portfolio-grid">
+          <!-- Project 1 -->
+          <div class="portfolio-item">
+            <div class="portfolio-img">
+              <img src="https://via.placeholder.com/600x400/0f172a/38bdf8?text=Project+One" alt="Project One">
+              <div class="portfolio-overlay">
+                <a href="#" class="portfolio-link"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>E-Commerce Platform</h3>
+              <span>Web Development</span>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="portfolio-item">
+            <div class="portfolio-img">
+              <img src="https://via.placeholder.com/600x400/1e293b/38bdf8?text=Project+Two" alt="Project Two">
+              <div class="portfolio-overlay">
+                <a href="#" class="portfolio-link"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Finance Dashboard</h3>
+              <span>UI/UX Design</span>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="portfolio-item">
+            <div class="portfolio-img">
+              <img src="https://via.placeholder.com/600x400/334155/38bdf8?text=Project+Three" alt="Project Three">
+              <div class="portfolio-overlay">
+                <a href="#" class="portfolio-link"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Travel App</h3>
+              <span>Mobile Application</span>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="testimonial-card">
-        <p>"We loved how Ngubar combined creative UI design with flawless functionality. Super happy with the final product."</p>
-        <div class="author">
-          <div class="avatar" style="background:#d94b6b;">AH</div>
-          <div>
-            <h4>Ahmed Khan</h4>
-            <span>Founder</span>
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Testimonials</h2>
+          <p>What people say about me</p>
+        </div>
+
+        <div class="testimonial-slider">
+          <div class="testimonial-card active">
+            <p>"Outstanding work! The attention to detail and creative solutions provided were beyond our expectations."
+            </p>
+            <div class="client-info">
+              <div class="client-avatar">DS</div>
+              <div>
+                <h4>Daniel Stone</h4>
+                <span>CEO, TechStart</span>
+              </div>
+            </div>
           </div>
+          <!-- More testimonials can be added dynamically or statically -->
         </div>
       </div>
-    </div>
+    </section>
 
-    <button class="nav next" onclick="moveSlide(1)">&#10095;</button>
-  </div>
-</section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container contact-wrapper">
+        <div class="contact-info">
+          <h2>Let's Talk</h2>
+          <p>Have a project in mind? I'd love to hear from you. Send me a message and I'll get back to you as soon as
+            possible.</p>
 
+          <div class="contact-detail">
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p>hello@devfolio.com</p>
+            </div>
+          </div>
 
-  <!-- Contact Section -->
- <section id="contact">
-  <div class="contact-container">
-    <h2>Hubungi Saya</h2>
-    <p>Silakan kirim pesan melalui email atau langsung lewat WhatsApp.</p>
+          <div class="contact-detail">
+            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p>+62 812 3456 7890</p>
+            </div>
+          </div>
 
-    <form id="contactForm">
-      <input type="text" id="name" placeholder="Nama Lengkap" required>
-      <input type="email" id="email" placeholder="Email" required>
-      <textarea id="message" rows="5" placeholder="Tulis pesan kamu di sini..." required></textarea>
-      <div class="button-group">
-        <button type="submit" class="btn-email">Kirim via Email</button>
-        <button type="button" class="btn-wa" onclick="sendToWhatsApp()">Kirim via WhatsApp</button>
+          <div class="contact-detail">
+            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Jakarta, Indonesia</p>
+            </div>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" required placeholder=" ">
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" required placeholder=" ">
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" required placeholder=" "></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary submit-btn">Send Message <i
+              class="fa-solid fa-paper-plane"></i></button>
+        </form>
       </div>
-    </form>
-  </div>
-</section>
-
+    </section>
+  </main>
 
   <!-- Footer -->
- <footer class="footer">
-  <div class="footer-container">
-    
-    <!-- Kolom 1: Logo dan Sosial Media -->
-    <div class="footer-col">
-      <div class="footer-logo">
-        <img src="logo.png" alt="Logo">
-        <h3>ngubar<span>.tech</span></h3>
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h3>Dev<span class="highlight">Folio</span></h3>
+        <p>Creating digital experiences that matter.</p>
       </div>
-      <p>Follow Our Social Media:</p>
-      <div class="social-icons">
+      <div class="footer-socials">
         <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-dribbble"></i></a>
       </div>
-      <p class="hashtag">#NgulikBarengYuk!</p>
     </div>
-
-    <!-- Kolom 2: Kontak -->
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <p>Email: <a href="mailto:ngubartechid@gmail.com">ngubartechid@gmail.com</a></p>
-      <p>Telephone: <a href="tel:+6285864930084">(+62) 858-6493-0084</a></p>
+    <div class="footer-bottom">
+      <p>&copy; 2026 DevFolio. All Rights Reserved.</p>
     </div>
+  </footer>
 
-    <!-- Kolom 3: Link -->
-    <div class="footer-col">
-      <h4>Usable Link</h4>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#client">Our Client</a></li>
-        <li><a href="#company">Our Company</a></li>
-        <li><a href="#service">Our Service</a></li>
-        <li><a href="#vision">Our Vision Mission</a></li>
-        <li><a href="#expertise">Our Expertise</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Garis bawah -->
-  <div class="footer-bottom">
-    © Ngubar Tech 2025. All rights reserved
-  </div>
-</footer>
-
-<!-- Font Awesome (ikon sosial media) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <a href="#home" class="scroll-top" id="scrollTop">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
 
   <script src="script.js"></script>
 </body>
+
 </html>

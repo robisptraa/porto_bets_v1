@@ -1,55 +1,67 @@
-window.addEventListener("scroll", () => {
-  const header = document.querySelector("header");
-  if (window.scrollY > 50) {
-    header.classList.add("shadow-md");
-    return;
-  } 
-    header.classList.remove("shadow-md");
-  }
-);
+// Mobile Menu Toggle
+const mobileMenu = document.getElementById('mobile-menu');
+const navLinks = document.querySelector('.nav-links');
 
-
-let index = 0;
-function moveSlide(step) {
-  const carousel = document.querySelector('.client-carousel');
-  const cards = document.querySelectorAll('.client-card');
-  index += step;
-
-  if (index < 0) index = cards.length - 1;
-  if (index >= cards.length) index = 0;
-
-  const offset = -index * (cards[0].offsetWidth + 30);
-  carousel.style.transform = `translateX(${offset}px)`;
-}
-
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const message = document.getElementById("message").value.trim();
-
-  const subject = encodeURIComponent("Pesan dari " + name);
-  const body = encodeURIComponent(`Nama: ${name}\nEmail: ${email}\n\nPesan:\n${message}`);
-
-
-  const yourEmail = "youremail@example.com";
-  window.location.href = `mailto:${yourEmail}?subject=${subject}&body=${body}`;
+mobileMenu.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
 });
 
+// Close mobile menu when a link is clicked
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+  });
+});
 
-function sendToWhatsApp() {
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const message = document.getElementById("message").value.trim();
+// Sticky Header & Scroll Top Button
+const header = document.querySelector('header');
+const scrollTopBtn = document.getElementById('scrollTop');
 
-  if (!name || !email || !message) {
-    alert("Harap isi semua kolom sebelum mengirim pesan.");
-    return;
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 100) {
+    header.classList.add('scrolled');
+    scrollTopBtn.classList.add('active');
+  } else {
+    header.classList.remove('scrolled');
+    scrollTopBtn.classList.remove('active');
   }
+  
+  // Highlight Active Link
+  const sections = document.querySelectorAll('section');
+  const scrollPos = window.scrollY + 100; // Offset for header
 
-  const phone = "6281234567890";
-  const text = `Halo! Saya ${name} (${email}).%0A%0A${message}`;
-  const url = `https://wa.me/${phone}?text=${text}`;
-  window.open(url, "_blank");
-}
+  sections.forEach(section => {
+    if (scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + section.id) {
+          link.classList.add('active');
+        }
+      });
+    }
+  });
+});
+
+// Contact Form Submission (Mock)
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  
+  const submitBtn = this.querySelector('.submit-btn');
+  const originalText = submitBtn.innerHTML;
+  
+  submitBtn.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin"></i>';
+  submitBtn.disabled = true;
+
+  // Simulate sending
+  setTimeout(() => {
+    submitBtn.innerHTML = 'Message Sent! <i class="fa-solid fa-check"></i>';
+    submitBtn.style.backgroundColor = '#10b981'; // Green color
+    
+    setTimeout(() => {
+      this.reset();
+      submitBtn.innerHTML = originalText;
+      submitBtn.style.backgroundColor = '';
+      submitBtn.disabled = false;
+    }, 3000);
+  }, 1500);
+});
